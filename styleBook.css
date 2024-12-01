@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: solid red 1px; */
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(237, 237, 237);
+}
+
+/* HEADER */
+
+.image-header {
+    position: absolute;
+    z-index: -1;
+    height: 550px;
+    width: 100%;
+    filter: brightness(50%);
+    object-fit: cover;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 5%;
+    color: white;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+    background-color: rgba(16, 16, 16, 0.806);
+    width: 90%;
+    margin: auto;
+    margin-bottom: 8%;
+}
+
+.nav-links .active-link {
+    color: rgb(0, 119, 255);
+    border-bottom: 1px solid rgb(0, 119, 255);
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 16px;
+    transition: ease 0.30s;
+}
+
+.nav-links a:hover {
+    color: rgb(0, 119, 255);
+    border-bottom: 1px solid rgb(0, 119, 255);
+}
+
+.profile {
+    justify-content: center;
+}
+
+.profile img {
+    height: 40px;
+    width: auto;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.header-text h1 {
+    text-align: center;
+    letter-spacing: 2px;
+    color: white;
+    font-size: 45px;
+}
+
+.header-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.book-button {
+    background-color: rgb(0, 119, 255);
+    border: none;
+    padding: 16px 38px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 16px;
+    transition: ease 0.30s;
+    cursor: pointer;
+}
+
+.book-button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 119, 255);
+}
+
+/* Main-Content */
+
+.main-content {
+    width: 100%;
+    margin-top: 170px;
+}
+
+.main-content {
+    display: flex;
+}
+
+.filters {
+    margin: 0 4%;
+    background-color: white;
+    padding: 20px 1.5%;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    max-height: 700px;
+}
+
+.check-availability {
+    background-color: rgb(240, 240, 240);
+    margin: 16px 0;
+    padding: 15px 10px;
+    border-radius: 8px;
+    width: 280px;
+    border: solid 1px rgb(147, 147, 147);
+}
+
+.check-availability p {
+    margin: 10px 0;
+}
+
+.date {
+    padding: 2.5px 8px;
+    width: 100%;
+}
+
+.facilities {
+    background-color: rgb(240, 240, 240);
+    margin: 16px 0;
+    padding: 15px 10px;
+    border-radius: 8px;
+    border: solid 1px rgb(147, 147, 147);
+}
+
+.facilities h4 {
+    margin-bottom: 8px;
+}
+
+.guests {
+    background-color: rgb(240, 240, 240);
+    margin: 16px 0;
+    padding: 15px 10px;
+    border-radius: 8px;
+    border: solid 1px rgb(147, 147, 147);
+}
+
+.guest-type {
+    display: flex;
+    justify-content: baseline;
+}
+
+.adults {
+    margin-right: 15px;
+}
+
+.input-number {
+    max-width: 110px;
+    padding: 2px 0;
+}
+
+.search-filter {
+    text-align: center;
+}
+
+.filter-button {
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    background-color: rgb(0, 119, 255);
+    color: white;
+    padding: 10px 35px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    border-radius: 5px;
+    transition: ease 0.30s;
+}
+
+.filter-button:hover {
+    background-color: white;
+    color: rgb(0, 119, 255);
+    border: solid 1px rgb(207, 207, 207);
+}
+
+.room-containers {
+    width: 100%;
+}
+
+.room1-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    padding: 10px 10px;
+    width: 95%;
+    border-radius: 10px;
+    transition: ease 0.30s;
+    margin-bottom: 2em;
+}
+
+.room1-container:hover {
+    transform: scale(1.02);
+}
+
+.room1-container img {
+    max-height: 250px;
+    max-width: 400px;
+    margin: 8px 8px;
+}
+
+.room-detail {
+    margin-left: 20px;
+    margin-right: 3%;
+    min-width: 350px;
+}
+
+.room-detail h4 {
+    margin-top: 10px;
+}
+
+.room-features {
+    display: flex;
+}
+
+.room-facilities {
+    display: flex;
+}
+
+.room-guests {
+    display: flex;
+}
+
+.room-features p,
+.room-facilities p,
+.room-guests p {
+    margin-right: 0.5em;
+    background-color: rgb(236, 236, 236);
+    border-radius: 8px;
+    padding: 3px 3px;
+    font-size: 12px;
+}
+
+.room-booking {
+    justify-content: center;
+    text-align: center;
+    min-width: 150px;
+}
+
+.room-booking button {
+    display: block;
+}
+
+.booking-button {
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(0, 119, 255);
+    padding: 9px 50px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    margin: 15px 0;
+}
+
+.detail-button {
+    border: solid gray 1.2px;
+    cursor: pointer;
+    color: rgb(0, 119, 255);
+    background-color: white;
+    padding: 9px 47px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+}
+
+footer {
+    background-color: black;
+}
+
+footer .footer-logo {
+    text-align: center;
+}
+
+.footer-logo a img {
+    height: 35px;
+    margin: 1em 1.5em;
+    margin-bottom: 0;
+}
+
+footer .footerNav {
+    text-align: center;
+    margin-bottom: 1em;
+    padding: 20px 0;
+}
+
+footer .footerNav a {
+    margin: 0 20px;
+    color: white;
+}
+
+footer p {
+    font-size: 10px;
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
+}

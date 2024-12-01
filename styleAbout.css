@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: solid red 1px; */
+}
+
+body {
+    font-family: "Poppins", sans-serif !important;
+    background-color: rgb(232, 232, 232);
+}
+
+span {
+    font-weight: bold;
+}
+
+/* HEADER */
+
+.image-header {
+    position: absolute;
+    z-index: -1;
+    height: 550px;
+    width: 100%;
+    filter: brightness(50%);
+    object-fit: cover;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 5%;
+    color: white;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+    background-color: rgba(16, 16, 16, 0.806);
+    width: 90%;
+    margin: auto;
+    margin-bottom: 8%;
+}
+
+.nav-links .active-link {
+    color: rgb(0, 119, 255);
+    border-bottom: 1px solid rgb(0, 119, 255);
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 16px;
+    transition: ease 0.30s;
+}
+
+.nav-links a:hover {
+    color: rgb(0, 119, 255);
+    border-bottom: 1px solid rgb(0, 119, 255);
+}
+
+.profile {
+    justify-content: center;
+}
+
+.profile img {
+    height: 40px;
+    width: auto;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.header-text h1 {
+    text-align: center;
+    letter-spacing: 2px;
+    color: white;
+    font-size: 45px;
+}
+
+.header-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.book-button {
+    background-color: rgb(0, 119, 255);
+    border: none;
+    padding: 16px 38px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 16px;
+    transition: ease 0.30s;
+    cursor: pointer;
+}
+
+.book-button:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 119, 255);
+}
+
+.aboutUs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12em;
+    width: 100%;
+    gap: 8%;
+    margin-bottom: 5%;
+}
+
+.about-content {
+    max-width: 500px;
+    margin-left: 3em;
+}
+
+.about-content h2{
+    font-size: 36px;
+}
+
+.about-us-img img {
+    height: 300px;
+    margin-right: 3em;
+}
+
+.aboutUs-detail {
+    background: white;
+    padding: 4em 0;
+}
+
+.about-story,
+.about-choose-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8%;
+    width: 100%;
+    margin-bottom: 3em;
+}
+
+.about-story-content h2, .about-choose-us-content h2{
+    font-size: 36px;
+}
+
+.about-story-content {
+    max-width: 500px;
+    margin-right: 3em;
+}
+
+.about-story img {
+    height: 300px;
+    margin-left: 3em;
+}
+
+.about-choose-us-content {
+    max-width: 500px;
+    margin-left: 3em;
+}
+
+.about-choose-us-content h2 {
+    margin-bottom: 5px;
+}
+
+.about-choose-us-content p {
+    margin-bottom: 1.5em;
+}
+
+.about-choose-us img {
+    height: 300px;
+    margin-right: 3em;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+}
+
+footer .footer-logo {
+    text-align: center;
+}
+
+.footer-logo a img {
+    height: 35px;
+    margin: 1em 1.5em;
+    margin-bottom: 0;
+}
+
+footer .footerNav {
+    text-align: center;
+    margin-bottom: 1em;
+    padding: 20px 0;
+}
+
+footer .footerNav a {
+    margin: 0 20px;
+    color: white;
+}
+
+footer p {
+    font-size: 10px;
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
+}
